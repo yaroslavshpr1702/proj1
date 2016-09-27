@@ -12,15 +12,23 @@
     }
     td.menu 
     {
-        background: yellow;
+        background: #00b3b3;
     }
     td.menu:hover 
     {
-        background: blue;
+        background: #008080;
     }
     td.content
     {
         color: white;
+    }
+    td.answers
+    {
+        background: #cc2900;
+    }
+    td.answers:hover
+    {
+        background: #991f00;
     }
 </style>
 <script type="text/javascript">
@@ -28,25 +36,85 @@
         var c1_elem = document.getElementById("c1");
         var c2_elem = document.getElementById("c2");
         var c3_elem = document.getElementById("c3");
+        var c4_elem = document.getElementById("c4");
+        var c5_elem = document.getElementById("c5");
+        var c6_elem = document.getElementById("c6");
         c1_elem.style.display = 'block';
         c2_elem.style.display = 'none';
         c3_elem.style.display = 'none';
+        c4_elem.style.display = 'none';
+        c5_elem.style.display = 'none';
+        c6_elem.style.display = 'none';
     }
     function show_pic() {
         var c1_elem = document.getElementById("c1");
         var c2_elem = document.getElementById("c2");
         var c3_elem = document.getElementById("c3");
+        var c4_elem = document.getElementById("c4");
+        var c5_elem = document.getElementById("c5");
+        var c6_elem = document.getElementById("c6");
         c1_elem.style.display = 'none';
         c2_elem.style.display = 'block';
         c3_elem.style.display = 'none';
+        c4_elem.style.display = 'none';
+        c5_elem.style.display = 'none';
+        c6_elem.style.display = 'none';
     }
     function show_game() {
         var c1_elem = document.getElementById("c1");
         var c2_elem = document.getElementById("c2");
         var c3_elem = document.getElementById("c3");
+        var c4_elem = document.getElementById("c4");
+        var c5_elem = document.getElementById("c5");
+        var c6_elem = document.getElementById("c6");
         c1_elem.style.display = 'none';
         c2_elem.style.display = 'none';
         c3_elem.style.display = 'block';
+        c4_elem.style.display = 'none';
+        c5_elem.style.display = 'none';
+        c6_elem.style.display = 'none';
+    }
+    function show_qw2() {
+        var c1_elem = document.getElementById("c1");
+        var c2_elem = document.getElementById("c2");
+        var c3_elem = document.getElementById("c3");
+        var c4_elem = document.getElementById("c4");
+        var c5_elem = document.getElementById("c5");
+        var c6_elem = document.getElementById("c6");
+        c1_elem.style.display = 'none';
+        c2_elem.style.display = 'none';
+        c3_elem.style.display = 'block';
+        c4_elem.style.display = 'block';
+        c5_elem.style.display = 'none';
+        c6_elem.style.display = 'none';
+    }
+    function show_qw3() {
+        var c1_elem = document.getElementById("c1");
+        var c2_elem = document.getElementById("c2");
+        var c3_elem = document.getElementById("c3");
+        var c4_elem = document.getElementById("c4");
+        var c5_elem = document.getElementById("c5");
+        var c6_elem = document.getElementById("c6");
+        c1_elem.style.display = 'none';
+        c2_elem.style.display = 'none';
+        c3_elem.style.display = 'block';
+        c4_elem.style.display = 'block';
+        c5_elem.style.display = 'block';
+        c6_elem.style.display = 'none';
+    }
+    function show_win() {
+        var c1_elem = document.getElementById("c1");
+        var c2_elem = document.getElementById("c2");
+        var c3_elem = document.getElementById("c3");
+        var c4_elem = document.getElementById("c4");
+        var c5_elem = document.getElementById("c5");
+        var c6_elem = document.getElementById("c6");
+        c1_elem.style.display = 'none';
+        c2_elem.style.display = 'none';
+        c3_elem.style.display = 'block';
+        c4_elem.style.display = 'block';
+        c5_elem.style.display = 'block';
+        c6_elem.style.display = 'block';
     }
 </script>
 <body>
@@ -65,8 +133,31 @@
 
 Являясь великой экономической державой, Япония занимает третье место в мире по номинальному ВВП и четвёртое по ВВП, рассчитанному по паритету покупательной способности. Япония является четвёртым по величине экспортёром и шестым по величине импортёром<br></div>
             <div id="c2" style="display:none"><img src="Japan.jpg" width="50%"><br>Япония</div>
-            <div id="c3" style="display:none">Как хорошо ты знаешь Японию?</div></td>
-		</tr>
+            <div id="c3" style="display:none">Когда американский коммодор Мэттью Перри, прибывший на Чёрных кораблях, вынудил Японию прекратить политику изоляции?</div></td>
+		<tr>
+            <td class="answers" width="30%"><div id="c3">В 1845</div></td>
+            <td class="answers" width="30%" onclick="show_qw2()"><div id="c3">В 1854</div></td>
+            <td class="answers" width="30%"><div id="c3">В 1872</div></td>
+        </tr>
+        <tr>
+            <td class="content" width="100%" colspan="3"><div id="c4" style="display:none">Сколько процентов составляет возвышенности, низкие и средневысотные горы Японии?</div></td>
+        </tr>
+        <tr>
+            <td class="answers" width="30%" onclick="show_qw3()"><div id="c4">75 %</div></td>
+            <td class="answers" width="30%"><div id="c4">25 %</div></td>
+            <td class="answers" width="30%"><div id="c4">87 %</div></td>
+        </tr>
+        <tr>
+            <td class="content" width="100%" colspan="3"><div id="c5" style="display:none">Сколько людей по состоянию на 1 марта 2015 года проживает в Японии?</div></td>
+        </tr>
+        <tr>
+            <td class="answers" width="30%"><div id="c5">1 373 541 278</div></td>
+            <td class="answers" width="30%"><div id="c5">127 345 000</div></td>
+            <td class="answers" width="30%" onclick="show_win()"><div id="c5">126 910 000</div></td>
+        </tr>
+        <tr>
+            <td class="content" width="100%" colspan="3"><div id="c6" style="display:none">Спасибо, что вы приняли участие в этой викторине.</div></td>
+        </tr>
 	</table>
 </body>
 </html>
